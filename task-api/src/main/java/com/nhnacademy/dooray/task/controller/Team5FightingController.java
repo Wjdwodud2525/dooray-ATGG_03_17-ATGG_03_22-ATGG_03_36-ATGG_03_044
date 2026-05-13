@@ -1,4 +1,4 @@
-package com.nhnacademy.dooray.gateway.controller;
+package com.nhnacademy.dooray.task.controller;
 
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/status")
-public class StatusController {
+public class Team5FightingController {
 
     @GetMapping
     public Map<String, String> status() {
         return Map.of(
-                "application", "gateway",
+                "application", "5조화이팅-task-api",
                 "status", "UP"
         );
     }
